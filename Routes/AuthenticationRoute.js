@@ -10,6 +10,9 @@ const User = mongoose.model("User");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
+require("../modals/UserData")
+const Userdata = mongoose.model("UserData")
+
 // this is the mailer function responsible for sending mail
 async function mailer(receivemail, code) {
   // console.log('mailer function called')
